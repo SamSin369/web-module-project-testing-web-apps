@@ -12,10 +12,12 @@ test("When the user fills out and submits form, species appears in animal list",
     //Arrange: Setup our component
     render(<AnimalForm />);
 
+    // const animal = "kitty";
+
     //Act:
     // - get the species input and add in a value
     const speciesInput = screen.getByLabelText("Species:");
-    userEvent.type(speciesInput, "kitty");
+    userEvent.type(speciesInput, animal);
 
     // - get the age input and add in a value
     const ageInput = screen.getByLabelText("Age:");
@@ -30,6 +32,6 @@ test("When the user fills out and submits form, species appears in animal list",
     userEvent.click(button);
 
     //Asset:
-    const animalText  
+    // const animalText  
     // our species name should be on the the screen.
 });

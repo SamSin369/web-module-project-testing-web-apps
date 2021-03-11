@@ -49,6 +49,7 @@ const AnimalForm = ({ errors, touched, values }) => {
           name="notes"
           onChange={event => handleChange(event)}
         />
+        <button data-testid="submitButton">Submit!</button>
         <button>Submit!</button>
       </form>
       
