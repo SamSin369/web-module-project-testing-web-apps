@@ -30,7 +30,7 @@ test("When the user fills out and submits form, species appears in animal list",
     // - find and click submit button
     const button = screen.getByRole("button");
     userEvent.click(button);
-
+    
     //Asset:
     // our species name should be on the the screen.
     const animalText = await screen.findByText(/kitty/i);
