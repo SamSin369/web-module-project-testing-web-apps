@@ -6,6 +6,10 @@ test("renders App without errors", ()=> {
     render(<App/>);
 });
 
+test("when page loads, renders app header", ()=>{
+    
+});
+
 
 
 
