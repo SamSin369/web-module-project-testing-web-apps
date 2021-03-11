@@ -14,7 +14,7 @@ test("when page loads, renders app header", ()=>{
     const header = screen.queryByText("Add New Animal");
     console.log(header.length);
 
-    const thisImage = screen.queryByAltText("This image");
+    const thisImage = screen.getByAltText("This image");
     
     //Assert: header should exist on the screen
     // expect(header).toBeInTheDocument();
