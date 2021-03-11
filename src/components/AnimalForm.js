@@ -42,7 +42,7 @@ const AnimalForm = ({ errors, touched, values }) => {
           name="age"
           onChange={event => handleChange(event)}
         />
-        <label htmlFor="notes">Notes:</label>
+        <label>Notes:</label>
         <textarea
           id="notes"
           type="text"
@@ -51,7 +51,7 @@ const AnimalForm = ({ errors, touched, values }) => {
         />
         <button>Submit!</button>
       </form>
-      
+
       <h4>Current Animals</h4>
       {animals.map(animal => (
         <p key={animal.id}>{animal.species}</p>

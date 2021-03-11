@@ -16,6 +16,8 @@ test("when page loads, renders app header", ()=>{
 
     const thisImage = screen.getByAltText("This image");
     
+    const noteInput = screen.getByLabelText("Notes:");
+
     //Assert: header should exist on the screen
     // expect(header).toBeInTheDocument();
 });
