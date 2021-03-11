@@ -12,14 +12,9 @@ test("when page loads, renders app header", ()=>{
 
     //Act: Access our header
     const header = screen.queryByText("Add New Animal");
-    console.log(header.length);
-
-    const thisImage = screen.getByAltText("This image");
     
-    const noteInput = screen.getByLabelText("Notes:");
-
     //Assert: header should exist on the screen
-    // expect(header).toBeInTheDocument();
+    expect(header).toBeInTheDocument();
 });
 
 
