@@ -9,8 +9,9 @@ test("renders App without errors", ()=> {
 test("when page loads, renders app header", ()=>{
     //Arrange: render our App component
     render(<App/>);
-    
+
     //Act: Access our header
+    const header = screen.getByText("Add New Animal");
     //Assert: header should exist on the screen
 
 });
