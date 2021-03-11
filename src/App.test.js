@@ -11,7 +11,7 @@ test("when page loads, renders app header", ()=>{
     render(<App/>);
 
     //Act: Access our header
-    const header = screen.queryByText(/add new animal/);
+    const header = screen.queryByText("Add New Animal");
     
     //Assert: header should exist on the screen
     expect(header).toBeInTheDocument();    
