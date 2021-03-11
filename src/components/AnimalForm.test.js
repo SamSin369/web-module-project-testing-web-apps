@@ -33,10 +33,8 @@ test("When the user fills out and submits form, species appears in animal list",
 
     //Asset:
     // our species name should be on the the screen.
-    const animalTextPromise = screen.findByText(/kitty/i);
-    animalTextPromise.then(res=>{
-        console.log(res);
-    });
+    const animalText = await screen.findByText(/kitty/i);
+    console.log(animalText);
     
 
     // /expect(animalText).toBeInTheDocument();
