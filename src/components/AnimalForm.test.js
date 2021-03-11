@@ -12,9 +12,14 @@ test("When the user fills out and submits form, species appears in animal list",
 
     //Act:
     // - get the species input and add in a value
-    const speciesInput = screen.getByLabelText("")
+    const speciesInput = screen.getByLabelText("Species:");
+    
     // - get the age input and add in a value
+    const ageInput = screen.getByLabelText("Age:");
+
     // - get the notes input and add in a value
+    const notesInput = screen.getByLabelText("Notes:");
+
     // - find and click submit button
 
     //Asset:
