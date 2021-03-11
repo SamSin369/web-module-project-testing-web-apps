@@ -15,7 +15,7 @@ test("when page loads, renders app header", ()=>{
     console.log(header);
     
     //Assert: header should exist on the screen
-    // expect(header).toBeInTheDocument();
+    expect(header).toBeInTheDocument();
 });
 
 
