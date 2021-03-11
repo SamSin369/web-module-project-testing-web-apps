@@ -12,7 +12,7 @@ test("When the user fills out and submits form, species appears in animal list",
     //Arrange: Setup our component
     render(<AnimalForm />);
 
-    const animal = "Lion";
+    const animal = "kitty";
 
     //Act:
     // - get the species input and add in a value
@@ -33,6 +33,6 @@ test("When the user fills out and submits form, species appears in animal list",
 
     //Asset:
     // our species name should be on the the screen.
-    const animalText = screen.queryByText(animal);
+    const animalText = screen.queryByText(/kitty/i);
     expect(animalText).toBeInTheDocument();
 });
