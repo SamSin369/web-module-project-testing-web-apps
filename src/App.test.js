@@ -8,9 +8,11 @@ test("renders App without errors", ()=> {
 
 test("when page loads, renders app header", ()=>{
     //Arrange: render our App component
+    render(<App/>);
+    
     //Act: Access our header
     //Assert: header should exist on the screen
-    
+
 });
 
 
