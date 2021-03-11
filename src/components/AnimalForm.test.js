@@ -16,12 +16,14 @@ test("When the user fills out and submits form, species appears in animal list",
     // - get the species input and add in a value
     const speciesInput = screen.getByLabelText("Species:");
     userEvent.type(speciesInput, "kitty");
-    
+
     // - get the age input and add in a value
     const ageInput = screen.getByLabelText("Age:");
+    userEvent.type(ageInput, 3);
 
     // - get the notes input and add in a value
     const notesInput = screen.getByLabelText("Notes:");
+    userEvent.type(notesInput, "the cutest....");
 
     // - find and click submit button
 
