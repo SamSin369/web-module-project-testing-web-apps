@@ -9,6 +9,8 @@ function App() {
       <h1>Add New Animal</h1>
       <h1>Add New Animal</h1>
       <h1>Add New Animal</h1>
+      <h1>Add New Animal</h1>
+      <h1>Add New Animal</h1>
       <AnimalForm />
     </div>
   );
