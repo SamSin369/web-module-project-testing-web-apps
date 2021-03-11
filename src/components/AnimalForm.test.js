@@ -7,5 +7,9 @@ test("renders AnimalForm without errors", ()=>{
 });
 
 test("When the user fills out and submits form, species appears in animal list", ()=> {
-    
+    //Arrange: Setup our component
+    //Act:
+    // - get the species input and add in a value
+    // - get the age input and add in a value
+    // - get the notes input and add in a value
 });
