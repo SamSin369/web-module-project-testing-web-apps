@@ -5,3 +5,7 @@ import AnimalForm from './AnimalForm';
 test("renders AnimalForm without errors", ()=>{
     render(<AnimalForm />);
 });
+
+test("When the user fills out and submits form, species appears in animal list", ()=> {
+    
+});
