@@ -12,7 +12,7 @@ test("When the user fills out and submits form, species appears in animal list",
     //Arrange: Setup our component
     render(<AnimalForm />);
 
-    // const animal = "kitty";
+    const animal = "kitty";
 
     //Act:
     // - get the species input and add in a value
@@ -28,7 +28,7 @@ test("When the user fills out and submits form, species appears in animal list",
     userEvent.type(notesInput, "the cutest....");
 
     // - find and click submit button
-    const button = screen.getByRole("button");
+    const button = screen.getByTestId("submitButton");
     userEvent.click(button);
 
     //Asset:
