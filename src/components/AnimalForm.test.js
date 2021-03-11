@@ -32,6 +32,8 @@ test("When the user fills out and submits form, species appears in animal list",
     userEvent.click(button);
 
     //Asset:
-    const animalText = screen.getByText(animal);
     // our species name should be on the the screen.
+    const animalText = screen.queryByText(animal);
+
+    
 });
