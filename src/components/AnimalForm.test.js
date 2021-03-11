@@ -43,8 +43,13 @@ test("When the user fills out and submits form, species appears in animal list",
 });
 
 
-const apiTest = ()=> {
+const axios = ()=> {
     return new Promise((resolve, reject)=> {
         resolve({result:"new data"});
     });
 }
+
+axios()
+    .then(res => {
+        console.log(res);
+    })
