@@ -52,4 +52,4 @@ const axios = ()=> {
 axios()
     .then(res => {
         console.log(res);
-    })
+    });
