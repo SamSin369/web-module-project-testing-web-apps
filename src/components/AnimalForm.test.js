@@ -28,10 +28,10 @@ test("When the user fills out and submits form, species appears in animal list",
     userEvent.type(notesInput, "the cutest....");
 
     // - find and click submit button
-    const button = screen.getByTestId("submitButton");
+    const button = screen.getByRole("button");
     userEvent.click(button);
 
     //Asset:
-    // const animalText  
+    const animalText = screen.getByText(animal);
     // our species name should be on the the screen.
 });
