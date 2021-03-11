@@ -1,5 +1,7 @@
 import React from 'react';
 import { screen, render } from "@testing-library/react";
+import userEvent from '@testing-library/user-event';
+
 import AnimalForm from './AnimalForm';
 
 test("renders AnimalForm without errors", ()=>{
@@ -13,7 +15,7 @@ test("When the user fills out and submits form, species appears in animal list",
     //Act:
     // - get the species input and add in a value
     const speciesInput = screen.getByLabelText("Species:");
-    
+
     // - get the age input and add in a value
     const ageInput = screen.getByLabelText("Age:");
 
