@@ -51,6 +51,7 @@ const AnimalForm = ({ errors, touched, values }) => {
         />
         <button>Submit!</button>
       </form>
+      
       <h4>Current Animals</h4>
       {animals.map(animal => (
         <p key={animal.id}>{animal.species}</p>
